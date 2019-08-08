@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label>ID</label>
+                    <input type="text" name="id" id="id">
+                </div>
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label>E-mail</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label>Class</label>
+                    <input type="text" name="class" id="class">
+                </div>
+                <div>
+                    <label>Year</label>
+                    <input type="text" name="year" id="year">
+                </div>
+                <div>
+                    <label>City</label>
+                    <input type="text" name="city" id="city">
+                </div>
+                <div>
+                    <label>Country</label>
+                    <input type="text" name="country" id="country">
+                </div>
+                <div class="form-action-buttons">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </td>
+        <td>
+            <table class="list" id="studentList">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>E-mail</th>
+                    <th>Class</th>
+                    <th>Year</th>
+                    <th>City</th>
+                    <th>Country</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+<script src="script.js"></script>
+
+</body>
+</html>

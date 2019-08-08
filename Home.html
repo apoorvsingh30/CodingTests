@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <script type="text/javascript">
+        function validate() {
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            if (email.value == "user@gmail.com" && password.value == "123456") {
+                return ;
+            } else {
+                alert("Wrong email or password");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="login-box">
+    <h1>Login</h1>
+
+    <form onsubmit="return validate() "action="crud.html" method="post">
+        <div class="textbox">
+            <input type="email" id="email" placeholder="E-mail" required>
+        </div>
+        <div class="textbox">
+        <input type="password" id="password" placeholder="Password" required>
+        </div>
+        <input class="btn" type="submit" value="Log-in">
+    </form>
+    <form onsubmit="" action="Registration.html">
+
+        <input class="btn" type="submit" value="Registeration">
+    </form>
+
+</body>
+</html>
